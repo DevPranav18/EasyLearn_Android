@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="AI Powered Doubt Solver Assistant"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-medium"
+        android:padding="8dp"
+        android:textColor="@android:color/black" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white"
+        android:padding="10dp"
+        android:scrollbars="vertical">
+
+        <TextView
+            android:id="@+id/Output"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:text="Output Here"
+            android:textColor="@android:color/black" />
+    </ScrollView>
+
+    <EditText
+        android:id="@+id/prompt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the topic"
+        android:inputType="text"
+        android:fontFamily="sans-serif"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:drawable/edit_text"
+        android:importantForAccessibility="yes" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Submit"
+        android:textSize="18sp"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:backgroundTint="@android:color/holo_blue_light" />
+</LinearLayout>
